@@ -10,10 +10,17 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
 project (cryptolab)
 
-
-add_executable(cryptolab main.c ht48.c)
-
-target_include_directories(cryptolab
-    PRIVATE 
-        ${PROJECT_SOURCE_DIR}/
+set(EXECUTABLES
+    mac
+    keyrec
+    test
 )
+
+foreach(EXEC ${EXECUTABLES})
+    add_executable(${EXEC} main_${EXEC}.c ht48.c)
+
+	target_include_directories(${EXEC}
+        PRIVATE 
+            ${PROJECT_SOURCE_DIR}/
+    )
+endforeach()
