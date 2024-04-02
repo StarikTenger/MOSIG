@@ -1,0 +1,27 @@
+#Exercice 1
+
+1) Conversion from decimals to binary format
+2) Array of unsigned char 
+3) pm_getrawbyte = reads the unsigned char from the file and returns it
+   pm_getint = decodes the integers from the file
+4) Decimals and characters
+5) White is associated to the maximal value
+6) The initial pgm file is significantly (about 4 times) larger than the pgm file after the conversion 
+
+
+
+#Exercice 2
+
+#Exercice 3 
+
+A PAM file consists of a header P7
+Example:
+P7
+WIDTH 227
+HEIGHT 149
+DEPTH 3
+MAXVAL 255
+TUPLTYPE RGB
+ENDHDR
+
+There is no defined maximum value for this file 

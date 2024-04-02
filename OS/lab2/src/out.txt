@@ -1,0 +1,57 @@
+Using First Fit policy
+gcc -c -DFIRST_FIT -DMEM_POOL_SIZE=1024 -DMEM_ALIGNMENT=1 -DDEBUG=0 -g  -Wall -Wpointer-arith -fPIC mem_alloc.c -o mem_alloc-lib.o -ldl
+mem_alloc.c: In function ‘memory_alloc’:
+mem_alloc.c:98:52: warning: pointer of type ‘void *’ used in subtraction [-Wpointer-arith]
+   98 |  printf("start of free%ld\n", (void*)current_block - heap_start);
+      |                                                    ^
+mem_alloc.c:111:47: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  111 |             (mb_free_t*)((void*)current_block + size + sizeof(mb_allocated_t));
+      |                                               ^
+mem_alloc.c:111:54: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  111 |             (mb_free_t*)((void*)current_block + size + sizeof(mb_allocated_t));
+      |                                                      ^
+mem_alloc.c:134:40: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  134 |  print_alloc_info((void*)current_block + sizeof(mb_allocated_t), size);
+      |                                        ^
+mem_alloc.c:138:33: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  138 |     return (void*)current_block + sizeof(mb_allocated_t);
+      |                                 ^
+mem_alloc.c: In function ‘memory_free’:
+mem_alloc.c:143:4: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  143 |  p -= sizeof(mb_allocated_t);
+      |    ^~
+mem_alloc.c:148:8: warning: comparison of distinct pointer types lacks a cast
+  148 |  if (p < first_free) {
+      |        ^
+mem_alloc.c:158:53: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  158 |     bool can_merge_right = cur_free->next_free && p + free_block.size == cur_free->next_free;
+      |                                                     ^
+mem_alloc.c:187:20: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  187 |  print_free_info(p + sizeof(mb_allocated_t));
+      |                    ^
+mem_alloc.c: In function ‘print_mem_state’:
+mem_alloc.c:214:57: warning: pointer of type ‘void *’ used in subtraction [-Wpointer-arith]
+  214 |   for (int i = 0; i < cur_free->size && (void*)cur_free - heap_start + i < linesize; i++) {
+      |                                                         ^
+mem_alloc.c:215:25: warning: pointer of type ‘void *’ used in subtraction [-Wpointer-arith]
+  215 |    line[(void*)cur_free - heap_start + i] = '_';
+      |                         ^
+mem_alloc.c:217:60: warning: pointer of type ‘void *’ used in subtraction [-Wpointer-arith]
+  217 |   for (int i = 0; i < sizeof(mb_free_t) && (void*)cur_free - heap_start + i < linesize; i++) {
+      |                                                            ^
+mem_alloc.c:218:25: warning: pointer of type ‘void *’ used in subtraction [-Wpointer-arith]
+  218 |    line[(void*)cur_free - heap_start + i] = 'h';
+      |                         ^
+gcc -c -DFIRST_FIT -DMEM_POOL_SIZE=1024 -DMEM_ALIGNMENT=1 -DDEBUG=0 -g  -Wall -Wpointer-arith -fPIC my_mmap.c -o my_mmap-lib.o
+ld -r mem_alloc-lib.o my_mmap-lib.o -o libmalloc.o
+gcc -c -DFIRST_FIT -DMEM_POOL_SIZE=1024 -DMEM_ALIGNMENT=1 -DDEBUG=0 -g  -Wall -Wpointer-arith mem_shell.c -o mem_shell.o
+gcc  -o bin/mem_shell libmalloc.o mem_shell.o -ldl
+cat tests/alloc4.in | bin/mem_shell 2>&1 
+ALLOC at : 8 (20 byte(s))
+ALLOC at : 36 (20 byte(s))
+ALLOC at : 64 (10 byte(s))
+ALLOC at : 82 (15 byte(s))
+ALLOC at : 105 (20 byte(s))
+FREE  at : 36 
+FREE  at : 82 
+make: *** [Makefile:117: tests/alloc4.trace] Interrupt

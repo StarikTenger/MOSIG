@@ -1,0 +1,80 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Testbench is
+end Testbench;
+
+architecture Behavioral of Testbench is
+    constant CLK_PERIOD : time := 10 ns;  -- Clock period
+    signal reset, clk, 
+    Half_power, Full_power, 
+    Start, 
+    s30, s60, s120,
+	Time_set, Door_open, 
+    Timeout 
+    : std_logic;
+    
+	signal Full, Half, In_light, 
+    Finished,
+ 	Start_count, Stop_count 
+    : std_logic;
+begin
+    -- Instantiate the unit under test (UUT)
+    uut: entity work.Oven
+        port map (
+            clk => clk,
+            reset => reset,
+            Half_power => Half_power,
+            Full_power => Full_power,
+            Start => Start,
+            s30 => s30,
+            s60 => s60,
+            s120 => s120,
+            Time_set => Time_set,
+            Door_open => Door_open
+        );
+
+    -- Clock process
+    clk_process: process
+    begin
+        while now < 1000 ns loop
+            clk <= '0';
+            wait for CLK_PERIOD / 2;
+            clk <= '1';
+            wait for CLK_PERIOD / 2;
+        end loop;
+        wait;
+    end process;
+
+    -- Stimulus process
+    stimulus_process: process
+    begin
+        -- Reset sequence
+        reset <= '1';
+        wait for CLK_PERIOD;
+        reset <= '0';
+        wait for CLK_PERIOD / 4;
+
+        -- Test sequence
+        door_open <= '0';
+        half_power <= '1';
+        wait for CLK_PERIOD;
+        half_power <= '0';
+        full_power <= '1';
+        wait for CLK_PERIOD;
+        full_power <= '0';
+        s60 <= '1';
+        wait for CLK_PERIOD;
+        s60 <= '0';
+        time_set <= '1';
+        wait for CLK_PERIOD;
+        time_set <= '0';
+        start <= '1';
+        wait for CLK_PERIOD;
+        start <= '0';
+
+        -- End simulation
+        wait;
+    end process;
+
+end Behavioral;

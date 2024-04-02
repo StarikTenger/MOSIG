@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/ilyin/GitHub/MOSIG/crypto/ht48.h
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+
+/mnt/c/Users/ilyin/GitHub/MOSIG/crypto/main.c
+ht48.h
+/mnt/c/Users/ilyin/GitHub/MOSIG/crypto/ht48.h
+stdio.h
+-
+string.h
+-
+

@@ -1,0 +1,3 @@
+/mnt/c/Users/ilyin/GitHub/MOSIG/crypto/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ilyin/GitHub/MOSIG/crypto/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ilyin/GitHub/MOSIG/crypto/build/CMakeFiles/cryptolab.dir

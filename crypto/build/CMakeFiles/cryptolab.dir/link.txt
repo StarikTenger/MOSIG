@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG   CMakeFiles/cryptolab.dir/main.c.o CMakeFiles/cryptolab.dir/ht48.c.o  -o cryptolab 
