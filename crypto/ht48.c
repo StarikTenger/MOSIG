@@ -132,7 +132,7 @@ void tcz48(uint8_t x[static 6], const uint8_t k[static 16])
  * Input h: a 48-bit chaining value
  * Output: void, h is overwritten with the result
  */
-void tcz48_dm(const uint8_t m[static 16], uint8_t h[static 6])
+void tcz48_dm(const uint8_t m[static 16], uint8_t h[static 6])	
 {
 	uint8_t th[6];
 
