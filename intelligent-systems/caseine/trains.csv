@@ -1,0 +1,44 @@
+departure;arrival;time
+Paris;Strasbourg;103
+Bordeaux;Paris;120
+Nantes;Paris;116
+Nice;Paris;342
+Le havre;Paris;124
+Brest;Paris;193
+Lyon;Paris;113
+Lille;Paris;57
+Paris;Toulouse;245
+Marseille;Paris;185
+La rochelle;Paris;147
+Limoges;Paris;195
+Montpellier;Paris;200
+Nancy;Paris;89
+Narbonne;Paris;250
+Orleans;Paris;65
+Paris;Poitiers;76
+Caen;Paris;109
+Cherbourg;Paris;187
+Dijon;Paris;93
+Paris;Reims;45
+Paris;Rennes;85
+Paris;Quimper;196
+Paris;Rouen;70
+Bordeaux;Marseille;338
+Paris;St etienne;168
+Lyon;Nantes;264
+Lyon;Strasbourg;209
+Amiens;Paris;66
+Clermont ferrand;Paris;195
+Grenoble;Paris;169
+Metz;Paris;83
+Bordeaux;Lyon;373
+Mulhouse;Paris;160
+Bayonne;Paris;234
+Boulogne;Paris;127
+Lille;Lyon;176
+Paris;Tours;64
+Angers;Paris;80
+Le mans;Paris;53
+Lyon;Rouen;221
+Arras;Paris;48
+Bordeaux;Lille;272
