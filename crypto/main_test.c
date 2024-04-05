@@ -1,5 +1,6 @@
 #include "ht48.h"
 #include "hashset.h"
+#include "combination.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -14,6 +15,14 @@ void print_message(const uint8_t m[static 16])
 
 int main() 
 {
+	int n = 5;
+	int k = 3;
+	uint64_t comb[k];
+	combination_init(n, k, comb);
+	combination_print(k, comb);
+	while (combination_next(n, k, comb)) {
+		combination_print(k, comb);
+	}
 	// uint8_t v1[3] = {0,0,0};
 	// uint8_t v2[3] = {1,1,0};
 	// uint8_t v3[3] = {1,2,3};

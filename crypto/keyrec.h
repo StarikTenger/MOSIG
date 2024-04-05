@@ -22,9 +22,7 @@ void keyrec(uint64_t blen, const uint8_t m[blen],
 	int i = 0;
 
 	while (combination_next(n, k, comb)) {
-		//combination_print(k, comb);
 		combination_bitstring(k, comb, 6, key);
-		//bitstring_print(buffsize, buff);
 		
 		smht48(key, 6, m, result);
 

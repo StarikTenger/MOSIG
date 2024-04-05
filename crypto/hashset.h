@@ -41,8 +41,7 @@ void lst_free(struct ListNode *list)
 
 #define HS_SIZE (1<<24)
 
-typedef struct ListNode* lref;
-typedef lref HashSet[HS_SIZE];
+typedef struct ListNode *HashSet[HS_SIZE];
 
 void hs_init(HashSet hs) 
 {
