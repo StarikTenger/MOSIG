@@ -1,3 +1,5 @@
+#pragma once
+
 #include "ht48.h"
 #include "smht48.h"
 #include "hashset.h"
@@ -36,8 +38,7 @@ bool colsearch(uint64_t iters, uint8_t m1[static 16], uint8_t m2[static 16]) {
 		h[4] = IVB4;
 		h[5] = IVB5;
 		tcz48_dm(m1, h);
-		// printhash(h);
-		// printf("\n");
+
 		if(i % 100000 == 0) {
 			printf("%lu / %lu\n", i, iters);
 		}
@@ -46,12 +47,16 @@ bool colsearch(uint64_t iters, uint8_t m1[static 16], uint8_t m2[static 16]) {
 			printf("Collision found:\n");
 			print_message(m1);
 			print_message(m2);
+			hs_free(hs);
+			free(hs);
 			return true;
 		}
 
 		hs_add(hs, h, m1);
 	}
 	printf("No collision found, try again\n");
+	hs_free(hs);
+	free(hs);
 	return false;
 }
 

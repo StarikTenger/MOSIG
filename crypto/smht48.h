@@ -1,3 +1,5 @@
+#pragma once
+
 #include "ht48.h"
 #include <stdio.h>
 #include <string.h>

@@ -1,3 +1,5 @@
+#pragma once
+
 #include "combination.h"
 #include "smht48.h"
 #include <stdio.h>
