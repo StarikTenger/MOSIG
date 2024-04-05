@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+/*
+	Performs collision search, prints the result
+*/
+
 int main() 
 {
 	uint8_t key[6]; 

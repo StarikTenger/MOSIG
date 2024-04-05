@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+	Calculates tags of message-key pairs given in lab description
+*/
 
 int main() 
 {

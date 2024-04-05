@@ -5,14 +5,14 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
+/* Recovers the key for given message and tag
  * In blen - size of message
  * In m - message
  * In h - tag value
  * Out k - key
  */
 void keyrec(uint64_t blen, const uint8_t m[blen], 
-	uint8_t h[static 6], uint8_t key[static 6]) 
+	const uint8_t h[static 6], uint8_t key[static 6]) 
 {
 	uint64_t n = 48;
 	uint64_t k = 7;

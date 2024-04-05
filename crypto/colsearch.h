@@ -18,9 +18,11 @@ void print_message(const uint8_t m[static 16])
 }
 
 void num_to_message(uint64_t num, uint8_t m[static 16]) {
-	for (int i = 0; i < 8; i++) {
-		((uint16_t*)m)[i] = rand() % (1<<16);
-	}
+	// for (int i = 0; i < 8; i++) {
+	// 	((uint16_t*)m)[i] = rand() % (1<<16);
+	// }
+	memset(m, 0, 16);
+	((uint64_t*)m)[0] = num;
 }
 
 bool colsearch(uint64_t iters, uint8_t m1[static 16], uint8_t m2[static 16]) {
@@ -47,7 +49,7 @@ bool colsearch(uint64_t iters, uint8_t m1[static 16], uint8_t m2[static 16]) {
 			printf("Collision found:\n");
 			print_message(m1);
 			print_message(m2);
-			hs_free(hs);
+			hs_cleanup(hs);
 			free(hs);
 			return true;
 		}
@@ -55,7 +57,7 @@ bool colsearch(uint64_t iters, uint8_t m1[static 16], uint8_t m2[static 16]) {
 		hs_add(hs, h, m1);
 	}
 	printf("No collision found, try again\n");
-	hs_free(hs);
+	hs_cleanup(hs);
 	free(hs);
 	return false;
 }

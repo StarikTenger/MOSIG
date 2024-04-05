@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+	This is the target for testing different functions
+*/
+
 void print_message(const uint8_t m[static 16]) 
 {
 	for (int i = 0; i < 16; i++) {
