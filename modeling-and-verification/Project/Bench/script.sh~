@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## clean
+if [ -d ../Libs/LIB_controller_BENCH ] 
+then /bin/rm -rf ../Libs/LIB_Controller_BENCH
+fi
+
+## creation of the lib
+vlib ../Libs/LIB_Controller_BENCH
+
+## compilation
+vcom -work LIB_Controller_BENCH test_oven.vhd
+
