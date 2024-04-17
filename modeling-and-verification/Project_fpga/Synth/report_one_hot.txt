@@ -1,0 +1,32 @@
+
+*******************************************************
+
+Cell: Oven_ctrl    View: Behavioral    Library: work
+
+*******************************************************
+
+
+ Cell     Library  References     Total Area
+
+AOI211    c35_CORELIB     5 x     73    364 um2
+AOI221    c35_CORELIB     2 x     91    182 um2
+AOI311    c35_CORELIB     1 x     91     91 um2
+CLKIN1    c35_CORELIB     7 x     36    255 um2
+DFC1      c35_CORELIB     7 x    309   2166 um2
+DFP1      c35_CORELIB     1 x    309    309 um2
+NAND21    c35_CORELIB     4 x     55    218 um2
+NAND31    c35_CORELIB     3 x     73    218 um2
+NOR21     c35_CORELIB     5 x     55    273 um2
+NOR31     c35_CORELIB     1 x     73     73 um2
+OAI211    c35_CORELIB     3 x     73    218 um2
+OAI221    c35_CORELIB     2 x     91    182 um2
+OAI311    c35_CORELIB     2 x     91    182 um2
+
+ Number of ports :                      17
+ Number of nets :                       61
+ Number of instances :                  43
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of um2 :                      4732
+ Number of accumulated instances :      43

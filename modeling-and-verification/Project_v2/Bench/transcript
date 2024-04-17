@@ -1,0 +1,153 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vsim LIB_CONTROLLER_BENCH.config_onehot
+# vsim LIB_CONTROLLER_BENCH.config_onehot 
+# Start time: 13:01:29 on Apr 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: Controller.vhd(489): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_0 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(494): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_1 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(500): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_2 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(506): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_3 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(511): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_4 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(517): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_5 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(523): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_6 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(528): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_7 : select_8_8" is not bound.
+# ** Warning: Controller.vhd(554): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_18 : select_3_3" is not bound.
+# ** Warning: Controller.vhd(556): (vopt-3473) Component instance "/Testbench/uut1/u1/modgen_select_19 : select_3_3" is not bound.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Oven_ctrl(Behavioral)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.config_onehot#1
+# Loading work.testbench(behavioral)#1
+# Loading lib_controller.config1#1
+# Loading lib_controller.oven(oven_arch)#1
+# Loading lib_controller.oven_ctrl(behavioral)#1
+# Loading lib_controller.oven_count(impl)#1
+# Loading lib_controller.config_onehot#2
+# Loading lib_controller.oven(oven_arch)#2
+# Loading ieee.vital_timing(body)
+# Loading c35_corelib.vcomponents
+# Loading lib_controller.oven_ctrl(behavioral_onehot)#1
+# ** Warning: (vsim-3473) Component instance "modgen_select_0 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_1 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_2 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_3 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_4 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_5 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_6 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_7 : select_8_8" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_18 : select_3_3" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+# ** Warning: (vsim-3473) Component instance "modgen_select_19 : select_3_3" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1 File: /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd
+add wave -position end  sim:/testbench/Time_set
+add wave -position end  sim:/testbench/Start
+add wave -position end  sim:/testbench/s120
+add wave -position end  sim:/testbench/s60
+add wave -position end  sim:/testbench/s30
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/In_light1
+add wave -position end  sim:/testbench/In_light
+add wave -position end  sim:/testbench/Half_power
+add wave -position end  sim:/testbench/Half1
+add wave -position end  sim:/testbench/Half
+add wave -position end  sim:/testbench/Full_power
+add wave -position end  sim:/testbench/Full1
+add wave -position end  sim:/testbench/Full
+add wave -position end  sim:/testbench/Finished1
+add wave -position end  sim:/testbench/Finished
+add wave -position end  sim:/testbench/Door_open
+add wave -position end  sim:/testbench/CLK_PERIOD
+add wave -position end  sim:/testbench/clk
+run
+run
+run
+vsim LIB_CONTROLLER_BENCH.config_binary
+# End time: 13:01:48 on Apr 10,2024, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 20
+# vsim LIB_CONTROLLER_BENCH.config_binary 
+# Start time: 13:01:49 on Apr 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Oven_ctrl(Behavioral)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.config_binary#1
+# Loading work.testbench(behavioral)#1
+# Loading lib_controller.config1#1
+# Loading lib_controller.oven(oven_arch)#1
+# Loading lib_controller.oven_ctrl(behavioral)#1
+# Loading lib_controller.oven_count(impl)#1
+# Loading lib_controller.config_binary#2
+# Loading lib_controller.oven(oven_arch)#2
+# Loading ieee.vital_timing(body)
+# Loading c35_corelib.vcomponents
+# Loading lib_controller.oven_ctrl(behavioral_binary)#1
+# ** Warning: (vsim-3479) Time unit 'ps' is less than the simulator resolution (1ns).
+#    Time: 0 ns  Iteration: 0  Instance: /Testbench/uut1/u1
+# Loading ieee.vital_primitives(body)
+# Loading c35_corelib.vtables
+# Loading c35_corelib.oai221(vital)#1
+# Loading c35_corelib.nand21(vital)#1
+# Loading c35_corelib.oai211(vital)#1
+# Loading c35_corelib.nand31(vital)#1
+# Loading c35_corelib.oai2111(vital)#1
+# Loading c35_corelib.clkin1(vital)#1
+# Loading c35_corelib.dfc1(vital)#1
+# Loading c35_corelib.nor21(vital)#1
+# Loading c35_corelib.aoi211(vital)#1
+# Loading c35_corelib.nor31(vital)#1
+# Loading c35_corelib.mux22(vital)#1
+# Loading c35_corelib.aoi2111(vital)#1
+# Loading c35_corelib.nor40(vital)#1
+add wave -position end  sim:/testbench/Time_set
+add wave -position end  sim:/testbench/Start
+add wave -position end  sim:/testbench/s120
+add wave -position end  sim:/testbench/s60
+add wave -position end  sim:/testbench/s30
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/In_light1
+add wave -position end  sim:/testbench/In_light
+add wave -position end  sim:/testbench/Half_power
+add wave -position end  sim:/testbench/Half1
+add wave -position end  sim:/testbench/Half
+add wave -position end  sim:/testbench/Full_power
+add wave -position end  sim:/testbench/Full1
+add wave -position end  sim:/testbench/Full
+add wave -position end  sim:/testbench/Finished1
+add wave -position end  sim:/testbench/Finished
+add wave -position end  sim:/testbench/Door_open
+add wave -position end  sim:/testbench/CLK_PERIOD
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/uut/u1/current_state
+add wave -position end  sim:/testbench/uut1/u1/current_state_2
+add wave -position end  sim:/testbench/uut1/u1/current_state_1
+add wave -position end  sim:/testbench/uut1/u1/current_state_0
+run
+run
+run

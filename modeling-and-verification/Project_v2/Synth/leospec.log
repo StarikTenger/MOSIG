@@ -1,0 +1,1478 @@
+LeonardoSpectrum Level 3 - 2017a.2 (Release Production Release, compiled Jul 18 2017 at 03:19:48)
+Copyright 1990-2017 Mentor Graphics.  All rights reserved.
+Portions copyright 1991-2017 Compuware Corporation
+
+Session history will be logged to file '/tp/xm1iarc/xm1iarc012/projet_asic/Project/Synth/leospec.his'
+--
+-- Welcome to LeonardoSpectrum Level 3
+-- Run Started On Wed Apr 10 08:33:14 CEST 2024
+--
+Reading library file `/softslin/leonardo2017a/lib/c35_CORELIB.syn`...
+Delays assume: Process=typical Temp= 25.0 C  Voltage=3.30 V  
+Info: setting encoding to auto
+Info, Command 'load_library' finished successfully
+_orig_load_library: technology library 'c35_CORELIB' has already been loaded
+Info: setting encoding to auto
+Info, Command 'load_library' finished successfully
+Info: setting encoding to Binary
+Binary
+-- Reading file /softslin/leonardo2017a/data/standard.vhd for unit standard
+-- Loading package standard into library std
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Reading file /softslin/leonardo2017a/data/std_1164.vhd for unit STD_LOGIC_1164
+-- Loading package std_logic_1164 into library IEEE
+-- Searching for SYNOPSYS package STD_LOGIC_ARITH..
+-- Reading file /softslin/leonardo2017a/data/syn_arit.vhd for unit STD_LOGIC_ARITH
+-- Loading package std_logic_arith into library IEEE
+-- Searching for SYNOPSYS package STD_LOGIC_UNSIGNED..
+-- Reading file /softslin/leonardo2017a/data/syn_unsi.vhd for unit STD_LOGIC_UNSIGNED
+-- Loading package STD_LOGIC_UNSIGNED into library IEEE
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+-- Compiling root entity Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL Controller_binary.vhd
+-- Writing file Controller_binary.vhd
+Info, Command 'auto_write' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL Controller_binary.vhd
+-- Writing file Controller_binary.vhd
+Info, Command 'auto_write' finished successfully
+Error: You must first set your Web BrowserLocation.
+_orig_load_library: technology library 'c35_CORELIB' has already been loaded
+Info, Command 'load_library' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL Controller_gray.vhd
+-- Writing file Controller_gray.vhd
+Info, Command 'auto_write' finished successfully
+Info: setting encoding to Gray
+Gray
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Gray.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  011
+       set_time  010
+operation_enabled  110
+operation_disabled  111
+      operating  101
+       complete  100
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL Controller_gray.vhd
+-- Writing file Controller_gray.vhd
+Info, Command 'auto_write' finished successfully
+Info: setting encoding to OneHot
+OneHot
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as OneHot.
+Encodings for state_type values
+        value    state_type[7-0]
+================================
+           idle  -------1
+  full_power_on  ------1-
+  half_power_on  -----1--
+       set_time  ----1---
+operation_enabled  ---1----
+operation_disabled  --1-----
+      operating  -1------
+       complete  1-------
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+Info: setting novendor_constraint_file to FALSE
+FALSE
+AutoWrite args are : -format VHDL Controller_onehot.vhd
+-- Writing file Controller_onehot.vhd
+Info, Command 'auto_write' finished successfully
+
+
+Info: setting encoding to Binary
+Binary
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+
+
+
+
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+
+
+
+Info: setting encoding to Gray
+Gray
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Gray.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  011
+       set_time  010
+operation_enabled  110
+operation_disabled  111
+      operating  101
+       complete  100
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+
+Info: setting encoding to Binary
+Binary
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+
+Info: setting encoding to Gray
+Gray
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Gray.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  011
+       set_time  010
+operation_enabled  110
+operation_disabled  111
+      operating  101
+       complete  100
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+
+Info: setting encoding to OneHot
+OneHot
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as OneHot.
+Encodings for state_type values
+        value    state_type[7-0]
+================================
+           idle  -------1
+  full_power_on  ------1-
+  half_power_on  -----1--
+       set_time  ----1---
+operation_enabled  ---1----
+operation_disabled  --1-----
+      operating  -1------
+       complete  1-------
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+
+
+NO wire table is found
+
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                  GATE              ARRIVAL              LOAD
+---------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                0.00 (ideal)
+
+
+reg_current_state(0)/QN               DFP1        0.00  0.73 up             0.02
+ix61/Q                                NOR21       0.11  0.84 dn             0.01
+ix882/Q                               OAI211      0.16  1.00 up             0.01
+ix67/Q                                OAI311      0.12  1.12 dn             0.01
+reg_current_state(2)/D                DFC1        0.00  1.12 dn             0.00
+data arrival time                                       1.12
+
+
+data required time                                   not specified
+---------------------------------------------------------------------------------
+data required time                                   not specified
+data arrival time                                       1.12
+                                                     ----------
+                                                  unconstrained path
+---------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+
+
+
+
+
+
+NO wire table is found
+
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                  GATE              ARRIVAL              LOAD
+---------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                0.00 (ideal)
+
+
+reg_current_state(0)/QN               DFP1        0.00  0.73 up             0.02
+ix61/Q                                NOR21       0.11  0.84 dn             0.01
+ix882/Q                               OAI211      0.16  1.00 up             0.01
+ix67/Q                                OAI311      0.12  1.12 dn             0.01
+reg_current_state(2)/D                DFC1        0.00  1.12 dn             0.00
+data arrival time                                       1.12
+
+
+data required time                                   not specified
+---------------------------------------------------------------------------------
+data required time                                   not specified
+data arrival time                                       1.12
+                                                     ----------
+                                                  unconstrained path
+---------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+
+
+
+
+
+
+
+
+
+
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+
+Info, Command 'report_area' finished successfully
+Info, Command 'report_area' finished successfully
+Info: setting encoding to Binary
+Binary
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+Info, Command 'report_area' finished successfully
+Info: setting encoding to Gray
+Gray
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Gray.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  011
+       set_time  010
+operation_enabled  110
+operation_disabled  111
+      operating  101
+       complete  100
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+Info, Command 'report_area' finished successfully
+Info: setting encoding to Binary
+Binary
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+Info, Command 'report_area' finished successfully
+NO wire table is found
+
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                  GATE              ARRIVAL              LOAD
+---------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                0.00 (ideal)
+
+
+reg_current_state(0)/QN               DFC1        0.00  1.08 up             0.07
+ix93/Q                                NOR40       0.41  1.49 dn             0.01
+ix506/Q                               AOI2111     0.24  1.73 up             0.01
+ix494/Q                               MUX22       0.16  1.89 up             0.01
+ix75/Q                                OAI211      0.07  1.96 dn             0.01
+reg_current_state(0)/D                DFC1        0.00  1.96 dn             0.00
+data arrival time                                       1.96
+
+
+data required time                                   not specified
+---------------------------------------------------------------------------------
+data required time                                   not specified
+data arrival time                                       1.96
+                                                     ----------
+                                                  unconstrained path
+---------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+Info, Command 'report_area' finished successfully
+NO wire table is found
+
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                  GATE              ARRIVAL              LOAD
+---------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                0.00 (ideal)
+
+
+reg_current_state(0)/QN               DFC1        0.00  1.08 up             0.07
+ix93/Q                                NOR40       0.41  1.49 dn             0.01
+ix506/Q                               AOI2111     0.24  1.73 up             0.01
+ix494/Q                               MUX22       0.16  1.89 up             0.01
+ix75/Q                                OAI211      0.07  1.96 dn             0.01
+reg_current_state(0)/D                DFC1        0.00  1.96 dn             0.00
+data arrival time                                       1.96
+
+
+data required time                                   not specified
+---------------------------------------------------------------------------------
+data required time                                   not specified
+data arrival time                                       1.96
+                                                     ----------
+                                                  unconstrained path
+---------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+
+
+
+NO wire table is found
+
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                  GATE              ARRIVAL              LOAD
+---------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                0.00 (ideal)
+
+
+reg_current_state(0)/QN               DFC1        0.00  1.08 up             0.07
+ix93/Q                                NOR40       0.41  1.49 dn             0.01
+ix506/Q                               AOI2111     0.24  1.73 up             0.01
+ix494/Q                               MUX22       0.16  1.89 up             0.01
+ix75/Q                                OAI211      0.07  1.96 dn             0.01
+reg_current_state(0)/D                DFC1        0.00  1.96 dn             0.00
+data arrival time                                       1.96
+
+
+data required time                                   not specified
+---------------------------------------------------------------------------------
+data required time                                   not specified
+data arrival time                                       1.96
+                                                     ----------
+                                                  unconstrained path
+---------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+
+NO wire table is found
+Info, Command 'report_delay' finished successfully
+Info: setting encoding to Gray
+Gray
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Gray.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  011
+       set_time  010
+operation_enabled  110
+operation_disabled  111
+      operating  101
+       complete  100
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+NO wire table is found
+Info, Command 'report_delay' finished successfully
+Info: setting encoding to OneHot
+OneHot
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as OneHot.
+Encodings for state_type values
+        value    state_type[7-0]
+================================
+           idle  -------1
+  full_power_on  ------1-
+  half_power_on  -----1--
+       set_time  ----1---
+operation_enabled  ---1----
+operation_disabled  --1-----
+      operating  -1------
+       complete  1-------
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+NO wire table is found
+Info, Command 'report_delay' finished successfully
+NO wire table is found
+
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                  GATE              ARRIVAL              LOAD
+---------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                0.00 (ideal)
+
+
+reg_current_state(0)/QN               DFP1        0.00  0.73 up             0.02
+ix61/Q                                NOR21       0.11  0.84 dn             0.01
+ix882/Q                               OAI211      0.16  1.00 up             0.01
+ix67/Q                                OAI311      0.12  1.12 dn             0.01
+reg_current_state(2)/D                DFC1        0.00  1.12 dn             0.00
+data arrival time                                       1.12
+
+
+data required time                                   not specified
+---------------------------------------------------------------------------------
+data required time                                   not specified
+data arrival time                                       1.12
+                                                     ----------
+                                                  unconstrained path
+---------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+
+Info: setting encoding to Binary
+Binary
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+NO wire table is found
+
+
+
+                        Critical Path Report
+
+Critical path #1, (unconstrained path)
+NAME                                  GATE              ARRIVAL              LOAD
+---------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                0.00 (ideal)
+
+
+reg_current_state(0)/QN               DFC1        0.00  1.08 up             0.07
+ix93/Q                                NOR40       0.41  1.49 dn             0.01
+ix506/Q                               AOI2111     0.24  1.73 up             0.01
+ix494/Q                               MUX22       0.16  1.89 up             0.01
+ix75/Q                                OAI211      0.07  1.96 dn             0.01
+reg_current_state(0)/D                DFC1        0.00  1.96 dn             0.00
+data arrival time                                       1.96
+
+
+data required time                                   not specified
+---------------------------------------------------------------------------------
+data required time                                   not specified
+data arrival time                                       1.96
+                                                     ----------
+                                                  unconstrained path
+---------------------------------------------------------------------------------
+
+
+Info, Command 'report_delay' finished successfully
+
+Info: setting encoding to Gray
+Gray
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 2: Warning, vcomponents is not declared in library c35_CORELIB.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd", line 2: Syntax Error near ';'.
+Error in file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd.
+-- Error found in VHDL source
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Gray.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  011
+       set_time  010
+operation_enabled  110
+operation_disabled  111
+      operating  101
+       complete  100
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+Info: setting encoding to Binary
+Binary
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 173: Warning, vcomponents is not declared in library c35_CORELIB.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 185: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 187: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 189: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 190: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 191: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 193: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 194: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 195: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 197: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 199: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 200: Error, 'NOR21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 201: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 203: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 204: Error, 'AOI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 206: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 208: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 209: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 210: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 211: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 213: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 214: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 216: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 218: Error, 'MUX22' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 219: Error, 'AOI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 221: -- Sorry, too many errors
+Error, 'NOR21' is not a component.
+Error in file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd.
+-- Error found in VHDL source
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 173: Warning, vcomponents is not declared in library c35_CORELIB.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 185: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 187: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 189: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 190: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 191: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 193: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 194: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 195: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 197: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 199: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 200: Error, 'NOR21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 201: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 203: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 204: Error, 'AOI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 206: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 208: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 209: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 210: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 211: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 213: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 214: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 216: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 218: Error, 'MUX22' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 219: Error, 'AOI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 221: -- Sorry, too many errors
+Error, 'NOR21' is not a component.
+Error in file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd.
+-- Error found in VHDL source
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 173: Warning, vcomponents is not declared in library c35_CORELIB.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 185: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 187: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 189: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 190: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 191: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 193: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 194: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 195: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 197: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 199: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 200: Error, 'NOR21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 201: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 203: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 204: Error, 'AOI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 206: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 208: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 209: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 210: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 211: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 213: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 214: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 216: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 218: Error, 'MUX22' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 219: Error, 'AOI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 221: -- Sorry, too many errors
+Error, 'NOR21' is not a component.
+Error in file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd.
+-- Error found in VHDL source
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 173: Warning, vcomponents is not declared in library c35_CORELIB.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 185: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 187: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 189: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 190: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 191: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 193: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 194: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 195: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 197: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 199: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 200: Error, 'NOR21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 201: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 203: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 204: Error, 'AOI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 206: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 208: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 209: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 210: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 211: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 213: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 214: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 216: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 218: Error, 'MUX22' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 219: Error, 'AOI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 221: -- Sorry, too many errors
+Error, 'NOR21' is not a component.
+Error in file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd.
+-- Error found in VHDL source
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 173: Warning, vcomponents is not declared in library c35_CORELIB.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 185: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 187: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 189: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 190: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 191: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 193: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 194: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 195: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 197: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 199: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 200: Error, 'NOR21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 201: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 203: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 204: Error, 'AOI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 206: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 208: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 209: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 210: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 211: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 213: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 214: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 216: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 218: Error, 'MUX22' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 219: Error, 'AOI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 221: -- Sorry, too many errors
+Error, 'NOR21' is not a component.
+Error in file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd.
+-- Error found in VHDL source
+{Package .std.standard} {Entity .work.Oven_ctrl} {Package .IEEE.std_logic_1164} {Package .IEEE.std_logic_arith} {Package .IEEE.STD_LOGIC_UNSIGNED}
+{Architecture .work.Oven_ctrl.Behavioral}
+{Package .std.standard} {Entity .work.Oven_ctrl} {Package .IEEE.std_logic_1164} {Package .IEEE.std_logic_arith} {Package .IEEE.STD_LOGIC_UNSIGNED}
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 173: Warning, vcomponents is not declared in library c35_CORELIB.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 185: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 187: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 189: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 190: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 191: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 193: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 194: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 195: Error, 'OAI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 197: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 199: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 200: Error, 'NOR21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 201: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 203: Error, 'NAND31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 204: Error, 'AOI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 206: Error, 'DFC1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 208: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 209: Error, 'CLKIN1' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 210: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 211: Error, 'NOR31' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 213: Error, 'NAND21' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 214: Error, 'OAI221' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 216: Error, 'OAI211' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 218: Error, 'MUX22' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 219: Error, 'AOI2111' is not a component.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd",line 221: -- Sorry, too many errors
+Error, 'NOR21' is not a component.
+Error in file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd.
+-- Error found in VHDL source
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller (copy).vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller (copy).vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller (copy).vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller (copy).vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+NO wire table is found
+-- Optimizing netlist .work.Oven_ctrl.Behavioral
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Info, Command 'optimize' finished successfully
+-- Start timing optimization for design .work.Oven_ctrl.Behavioral
+No critical paths to optimize at this level
+Info, Command 'optimize_timing' finished successfully
+
+
+
+
+
+Error, cannot open file '/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller (copy).vhd'
+-- Reading vhdl file /tp/xm1iarc/xm1iarc012/projet_asic/Project/backup/Controller (copy).vhd into library work
+-- Loading entity Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/backup/Controller (copy).vhd",line 7: Warning, replacing Oven_ctrl in HDL library work.
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/backup/Controller (copy).vhd",line 26: Info, Enumerated type state_type with 8 elements encoded as Binary.
+Encodings for state_type values
+        value    state_type[2-0]
+================================
+           idle  000
+  full_power_on  001
+  half_power_on  010
+       set_time  011
+operation_enabled  100
+operation_disabled  101
+      operating  110
+       complete  111
+
+-- Loading architecture Behavioral of Oven_ctrl into library work
+"/tp/xm1iarc/xm1iarc012/projet_asic/Project/backup/Controller (copy).vhd",line 25: Warning, replacing Behavioral of entity Oven_ctrl.
+-- Compiling root entity Oven_ctrl(Behavioral)
+-- Info, replacing Oven_ctrl(Behavioral)
+Info, Command 'read' finished successfully
+-- Boundary optimization.
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully
+-- Start pre-optimization for design .work.Oven_ctrl.Behavioral
+Info, Command 'pre_optimize' finished successfully

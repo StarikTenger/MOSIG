@@ -1,0 +1,221 @@
+#
+#
+# 
+# Wed Apr 10 08:33:14 2024
+load_library c35_CORELIB
+load_library c35_CORELIB
+set encoding Binary
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+set novendor_constraint_file FALSE
+auto_write -format VHDL Controller_binary.vhd
+set novendor_constraint_file FALSE
+auto_write -format VHDL Controller_binary.vhd
+load_library c35_CORELIB
+set novendor_constraint_file FALSE
+auto_write -format VHDL Controller_gray.vhd
+set encoding Gray
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+set novendor_constraint_file FALSE
+auto_write -format VHDL Controller_gray.vhd
+set encoding OneHot
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+set novendor_constraint_file FALSE
+auto_write -format VHDL Controller_onehot.vhd
+view_schematic -rtl -view
+view_schematic -rtl -view
+set encoding Binary
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+view_schematic -rtl -view
+view_schematic -rtl -view
+view_schematic -rtl -view
+view_schematic -rtl -view
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -area -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+view_schematic -rtl -view
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+view_schematic -view
+view_schematic -rtl -view
+view_schematic -view
+set encoding Gray
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+view_schematic -rtl -view
+set encoding Binary
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+view_schematic -rtl -view
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -area -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+view_schematic -view
+set encoding Gray
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+view_schematic -view
+set encoding OneHot
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+view_schematic -view
+view_schematic -view
+report_delay -num_paths 1 -show_schematic 1 -critical_paths
+view_schematic -rtl -view
+view_schematic -view
+view_schematic -view
+view_schematic -view
+view_schematic -view
+report_delay -num_paths 1 -show_schematic 1 -critical_paths
+view_schematic -view
+view_schematic -view
+view_schematic -view
+view_schematic -rtl -view
+view_schematic -view
+view_schematic -view
+view_schematic -view
+view_schematic -view
+view_schematic -view
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+view_schematic -view
+report_area report.txt -cell_usage -all_leafs 
+report_area report_one_hot.txt -cell_usage -all_leafs 
+set encoding Binary
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+report_area report_binary.txt -cell_usage -all_leafs 
+set encoding Gray
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+report_area report_gray.txt -cell_usage -all_leafs 
+set encoding Binary
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+report_area report_binary.txt -cell_usage -all_leafs 
+report_delay -num_paths 1 -show_schematic 1 -critical_paths
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+report_area report_binary.txt -cell_usage -hierarchy -all_leafs 
+report_delay -num_paths 1 -show_schematic 1 -critical_paths
+view_schematic -view
+view_schematic -rtl -view
+report_delay -num_paths 1 -show_schematic 1 -critical_paths
+report_delay report_delay_binary -num_paths 1 -critical_paths -clock_frequency
+set encoding Gray
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+report_delay report_delay_gray -num_paths 1 -critical_paths -clock_frequency
+set encoding OneHot
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+report_delay report_delay_one_hot -num_paths 1 -critical_paths -clock_frequency
+report_delay -num_paths 1 -show_schematic 1 -critical_paths
+set encoding Binary
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+report_delay -num_paths 1 -show_schematic 1 -critical_paths
+set encoding Gray
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+### Previous Command Failed
+
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+set encoding Binary
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+### Previous Command Failed
+
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+### Previous Command Failed
+
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+### Previous Command Failed
+
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+### Previous Command Failed
+
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+### Previous Command Failed
+
+list_design -hdl .*.
+list_design -hdl .*.*.
+list_design -hdl .*.
+read -technology "c35_CORELIB"  { /tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller.vhd }
+### Previous Command Failed
+
+read -technology "c35_CORELIB"  { "/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller (copy).vhd" }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
+optimize .work.Oven_ctrl.Behavioral -target c35_CORELIB -macro -delay -effort quick -hierarchy auto 
+optimize_timing .work.Oven_ctrl.Behavioral 
+view_schematic -rtl -view
+view_schematic -view
+view_schematic -rtl -view
+view_schematic -view
+view_schematic -rtl -view
+read -technology "c35_CORELIB"  { "/tp/xm1iarc/xm1iarc012/projet_asic/Project/Sources/Controller (copy).vhd" }
+### Previous Command Failed
+
+read -technology "c35_CORELIB"  { "/tp/xm1iarc/xm1iarc012/projet_asic/Project/backup/Controller (copy).vhd" }
+pre_optimize -common_logic -unused_logic -boundary -xor_comparator_optimize 
+pre_optimize -extract 
