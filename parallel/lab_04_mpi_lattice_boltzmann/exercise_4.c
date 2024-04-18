@@ -67,10 +67,10 @@ void lbm_comm_init_ex4(lbm_comm_t * comm, int total_width, int total_height)
 	//OPTIONAL : if you want to avoid allocating temporary copy buffer
 	//           for every step :
 	//comm->buffer_recv_down, comm->buffer_recv_up, comm->buffer_send_down, comm->buffer_send_up
-	comm->buffer_recv_down = (double*)malloc((comm->width - 2) * sizeof(double) * DIRECTIONS);
-	comm->buffer_recv_up = (double*)malloc((comm->width - 2) * sizeof(double) * DIRECTIONS);
-	comm->buffer_send_down = (double*)malloc((comm->width - 2) * sizeof(double) * DIRECTIONS);
-	comm->buffer_send_up = (double*)malloc((comm->width - 2) * sizeof(double) * DIRECTIONS);
+	comm->buffer_recv_down = (double*)malloc((comm->width) * sizeof(double) * DIRECTIONS);
+	comm->buffer_recv_up = (double*)malloc((comm->width) * sizeof(double) * DIRECTIONS);
+	comm->buffer_send_down = (double*)malloc((comm->width) * sizeof(double) * DIRECTIONS);
+	comm->buffer_send_up = (double*)malloc((comm->width) * sizeof(double) * DIRECTIONS);
 
 	//if debug print comm
 	lbm_comm_print(comm);
@@ -120,7 +120,7 @@ void lbm_comm_ghost_exchange_ex4(lbm_comm_t * comm, lbm_mesh_t * mesh)
 
 	// Corners
 	double *corner_top_left = lbm_mesh_get_cell(mesh, 1, 1);
-	double *corner_top_right = lbm_mesh_get_cell(mesh, comm->width - 2, 0);
+	double *corner_top_right = lbm_mesh_get_cell(mesh, comm->width - 2, 1);
 	double *corner_bottom_left = lbm_mesh_get_cell(mesh, 1, comm->height - 2);
 	double *corner_bottom_right = lbm_mesh_get_cell(mesh, comm->width - 2, 
 													comm->height - 2);
@@ -132,19 +132,19 @@ void lbm_comm_ghost_exchange_ex4(lbm_comm_t * comm, lbm_mesh_t * mesh)
 												   comm->height - 1);
 
 	// Copy to buffers
-	for (int i = 0; i < comm->width - 2; i++) {
+	for (int i = 0; i < comm->width; i++) {
 		memcpy((void*)&comm->buffer_send_up[i * DIRECTIONS], 
-			   (void*)lbm_mesh_get_cell(mesh, i + 1, 1), 
+			   (void*)lbm_mesh_get_cell(mesh, i, 1), 
 			   sizeof(double) * DIRECTIONS);
 		memcpy((void*)&comm->buffer_send_down[i * DIRECTIONS], 
-			   (void*)lbm_mesh_get_cell(mesh, i + 1, comm->height - 2), 
+			   (void*)lbm_mesh_get_cell(mesh, i, comm->height - 2), 
 			   sizeof(double) * DIRECTIONS);
 	}
 
 	// ======== EXCHANGE ========
 
-	const size_t VSIZE = (comm->height - 2) * DIRECTIONS;
-	const size_t HSIZE = (comm->width - 2) * DIRECTIONS;
+	const size_t VSIZE = (comm->height) * DIRECTIONS;
+	const size_t HSIZE = (comm->width) * DIRECTIONS;
 
 	// -------- SEND --------
 
@@ -209,6 +209,32 @@ void lbm_comm_ghost_exchange_ex4(lbm_comm_t * comm, lbm_mesh_t * mesh)
 
 	// -------- RECEIVE --------
 
+	// Top
+	if (comm->rank_y - 1 >= 0) {
+		MPI_Recv(comm->buffer_recv_up, HSIZE, MPI_DOUBLE, 
+			get_rank(comm, comm->rank_x, comm->rank_y - 1),
+			0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+		for (int i = 0; i < comm->width; i++) {
+			memcpy((void*)lbm_mesh_get_cell(mesh, i, 0), 
+					(void*)&comm->buffer_recv_up[i * DIRECTIONS], 
+					sizeof(double) * DIRECTIONS);
+		}
+	}
+
+	// Bottom
+	if (comm->rank_y + 1 < comm->nb_y) {
+		MPI_Recv(comm->buffer_recv_down, HSIZE, MPI_DOUBLE, 
+			get_rank(comm, comm->rank_x, comm->rank_y + 1),
+			0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+			
+		for (int i = 0; i < comm->width; i++) {
+			memcpy((void*)lbm_mesh_get_cell(mesh, i, comm->height - 1), 
+					(void*)&comm->buffer_recv_down[i * DIRECTIONS], 
+					sizeof(double) * DIRECTIONS);
+		}
+	}
+
 	// Left + corners
 	if (comm->rank_x - 1 >= 0) {
 		MPI_Recv(ghost_l, VSIZE, MPI_DOUBLE, 
@@ -251,30 +277,7 @@ void lbm_comm_ghost_exchange_ex4(lbm_comm_t * comm, lbm_mesh_t * mesh)
 		}
 	}
 
-	// Top
-	if (comm->rank_y - 1 >= 0) {
-		MPI_Recv(comm->buffer_recv_up, HSIZE, MPI_DOUBLE, 
-			get_rank(comm, comm->rank_x, comm->rank_y - 1),
-			0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-		for (int i = 0; i < comm->width -2; i++) {
-			memcpy((void*)lbm_mesh_get_cell(mesh, i + 1, 1), 
-					(void*)&comm->buffer_recv_up[i * DIRECTIONS], 
-					sizeof(double) * DIRECTIONS);
-		}
-	}
-
-	// Bottom
-	if (comm->rank_y + 1 < comm->nb_y) {
-		MPI_Recv(comm->buffer_recv_down, HSIZE, MPI_DOUBLE, 
-			get_rank(comm, comm->rank_x, comm->rank_y + 1),
-			0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		for (int i = 0; i < comm->width -2; i++) {
-			memcpy((void*)lbm_mesh_get_cell(mesh, i + 1, comm->height - 2), 
-					(void*)&comm->buffer_recv_down[i * DIRECTIONS], 
-					sizeof(double) * DIRECTIONS);
-		}
-	}
+	
 
 	// ==========================
 
