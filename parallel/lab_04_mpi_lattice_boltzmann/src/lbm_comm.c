@@ -44,8 +44,10 @@ void  lbm_comm_print( lbm_comm_t *comm )
 {
 	int rank ;
 	MPI_Comm_rank( MPI_COMM_WORLD, &rank );
-	printf( " RANK %d ( POSITION %d %d ) (WH %d %d ) \n", 
+	printf( " RANK %d (Rx Ry %d %d) ( POSITION %d %d ) (WH %d %d ) \n", 
 		rank,
+		comm->rank_x,
+		comm->rank_y,
 		comm->x,
 		comm->y,
 		comm->width,
