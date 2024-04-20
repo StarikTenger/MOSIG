@@ -1,2 +1,5 @@
 *.gif
 *.raw
+*.o
+lbm
+check_comm

@@ -38,19 +38,22 @@ void lbm_comm_init_ex4(lbm_comm_t * comm, int total_width, int total_height)
 
 	// We assume that division is square TODO: make more flexible
 	int size = 1;
-	for (;size * size < comm_size; size++);
-	if (size * size != comm_size) {
+	comm->nb_x = 0;
+	comm->nb_y = 0;
+	for (;size * size <= comm_size; size++) {
+		if (comm_size % size == 0) {
+			comm->nb_x = size;
+			comm->nb_y = comm_size / size;
+		}
+	}
+	if (comm->nb_x * comm->nb_y != comm_size) {
 		printf("Initialization ERROR: wrong comm_size\n");
 		return;
 	}
 
-	// TODO: calculate the number of tasks along X axis and Y axis.
-	comm->nb_x = size;
-	comm->nb_y = size;
-
 	// TODO: calculate the current task position in the splitting
-	comm->rank_x = rank % comm->nb_y;
-	comm->rank_y = rank / comm->nb_y;
+	comm->rank_x = rank % comm->nb_x;
+	comm->rank_y = rank / comm->nb_x;
 
 	// TODO : calculate the local sub-domain size (do not forget the 
 	//        ghost cells). Use total_width & total_height as starting 
