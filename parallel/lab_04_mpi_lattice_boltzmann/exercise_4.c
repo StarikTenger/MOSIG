@@ -89,30 +89,12 @@ void lbm_comm_release_ex4(lbm_comm_t * comm)
 }
 
 int get_rank(lbm_comm_t * comm, int x, int y) {
-	//printf("get_rank(%d, %d) = %d\n", x ,y, y * comm->nb_x + x);
 	return y * comm->nb_x + x;
 }
 
 /****************************************************/
 void lbm_comm_ghost_exchange_ex4(lbm_comm_t * comm, lbm_mesh_t * mesh)
 {
-	//
-	// TODO: Implement the 2D communication with :
-	//         - blocking MPI functions
-	//         - manual copy in temp buffer for non contiguous side 
-	//
-	// To be used:
-	//    - DIRECTIONS: the number of doubles composing a cell
-	//    - double[9] lbm_mesh_get_cell(mesh, x, y): function to get the address of a particular cell.
-	//    - comm->width : The with of the local sub-domain (containing the ghost cells)
-	//    - comm->height : The height of the local sub-domain (containing the ghost cells)
-	//
-	// TIP: create a function to get the target rank from x,y task coordinate. 
-	// TIP: You can use MPI_PROC_NULL on borders.
-	// TIP: send the corner values 2 times, with the up/down/left/write communication
-	//      and with the diagonal communication in a second time, this avoid
-	//      special cases for border tasks.
-
 	// ======== PREPARATION ========
 
 	// Left-right borders
@@ -207,8 +189,6 @@ void lbm_comm_ghost_exchange_ex4(lbm_comm_t * comm, lbm_mesh_t * mesh)
 			0, MPI_COMM_WORLD);
 	}
 
-	//printf("all sent\n");
-
 
 	// -------- RECEIVE --------
 
@@ -283,21 +263,4 @@ void lbm_comm_ghost_exchange_ex4(lbm_comm_t * comm, lbm_mesh_t * mesh)
 	
 
 	// ==========================
-
-
-	// Copy from buffers
-	
-
-	
-
-
-
-	//example to access cell
-	//double * cell = lbm_mesh_get_cell(mesh, local_x, local_y);
-	//double * cell = lbm_mesh_get_cell(mesh, comm->width - 1, 0);
-
-	//TODO:
-	//   - implement left/write communications
-	//   - implement top/bottom communication (non contiguous)
-	//   - implement diagonal communications
 }

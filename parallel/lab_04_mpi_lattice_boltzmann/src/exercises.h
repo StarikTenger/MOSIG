@@ -84,4 +84,6 @@ void lbm_do_step_ex_select(lbm_comm_t * comm, lbm_mesh_type_t * mesh_type, lbm_m
 //selector
 void lbm_ex_select(int id);
 
+int get_rank(lbm_comm_t * comm, int x, int y);
+
 #endif //LBM_EXERCICES_H
