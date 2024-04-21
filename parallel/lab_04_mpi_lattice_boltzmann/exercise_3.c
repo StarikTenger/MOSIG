@@ -39,6 +39,8 @@ void lbm_comm_ghost_exchange_ex3(lbm_comm_t * comm, lbm_mesh_t * mesh)
 
 	MPI_Request request_l;
 	MPI_Request request_r;
+	MPI_Request recv_l;
+	MPI_Request recv_r;
 
 	if (comm->rank_x - 1 >= 0) {
 		MPI_Isend(border_l, comm->height * DIRECTIONS, MPI_DOUBLE, 
@@ -50,16 +52,20 @@ void lbm_comm_ghost_exchange_ex3(lbm_comm_t * comm, lbm_mesh_t * mesh)
 	}
 
 	if (comm->rank_x - 1 >= 0) {
-		MPI_Status st;
-		MPI_Recv(ghost_l, comm->height * DIRECTIONS, MPI_DOUBLE, 
-			comm->rank_x - 1, 0, MPI_COMM_WORLD, &st);
+		MPI_Irecv(ghost_l, comm->height * DIRECTIONS, MPI_DOUBLE, 
+			comm->rank_x - 1, 0, MPI_COMM_WORLD, &recv_l);
 	}
 	if (comm->rank_x + 1 < comm->nb_x) {
-		MPI_Status st;
-		MPI_Recv(ghost_r, comm->height * DIRECTIONS, MPI_DOUBLE, 
-			comm->rank_x + 1, 0, MPI_COMM_WORLD, &st);
+		MPI_Irecv(ghost_r, comm->height * DIRECTIONS, MPI_DOUBLE, 
+			comm->rank_x + 1, 0, MPI_COMM_WORLD, &recv_r);
 	}
 
-	if (comm->rank_x - 1 >= 0) MPI_Wait(&request_l, MPI_STATUS_IGNORE);
-	if (comm->rank_x + 1 < comm->nb_x) MPI_Wait(&request_r, MPI_STATUS_IGNORE);
+	if (comm->rank_x - 1 >= 0) {
+		MPI_Wait(&request_l, MPI_STATUS_IGNORE);
+		MPI_Wait(&recv_l, MPI_STATUS_IGNORE);
+	}
+	if (comm->rank_x + 1 < comm->nb_x) {
+		MPI_Wait(&request_r, MPI_STATUS_IGNORE);
+		MPI_Wait(&recv_r, MPI_STATUS_IGNORE);
+	}
 }
